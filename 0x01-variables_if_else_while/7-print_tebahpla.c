@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Prints the alphabet in reverse order 
+ * main - Prints the alphabet in reverse order
  * Return: integer zero.
  */
 int main(void)
