@@ -6,7 +6,6 @@
 int main(void)
 {
 	int p, q;
-	int notInt = 48;
 
 	for (p = 0; p < 9; p++)
 	{
