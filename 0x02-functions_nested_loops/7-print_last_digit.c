@@ -1,24 +1,23 @@
 #include "main.h"
 /**
  * print_last_digit - Makes the sum of two numbers
- * @last: Number to take its last number
+ * @last: Number to take its last digit
  *
  * Description: Take a number, and return its last digit
  * Return: Positive digit
  */
 int print_last_digit(int last)
 {
-	int ultimo;
+	int ultimo = last % 10;
 
-	if (last >= 0)
+	if (ultimo >= 0)
 	{
-		ultimo = (last % 10) + 48;
+		_putchar(ultimo + 48);
+		return (ultimo);
 	}
 	else
 	{
-		last = -1 * last;
-		ultimo = (last % 10) + 48;
+		_putchar(-ultimo + 48);
+		return (-ultimo);
 	}
-	_putchar(ultimo);
-	return (0);
 }
