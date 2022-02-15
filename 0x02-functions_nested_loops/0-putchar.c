@@ -1,20 +1,19 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - Prints _putchar/**
- * main - Prints last digit of an integer
+ * main - Prints _putchar
  * Return: integer zero
  */
 int main(void)
 {
-	putchar(45);
-	putchar(112);
-	putchar(117);
-	putchar(116);
-	putchar(99);
-	putchar(104);
-	putchar(97);
-	putchar(114);
-	putchar(10);
+	char x[] = "_putchar";
+	int y = 0;
 
+	while (x[y] != '\0')
+	{
+		_putchar(x[y]);
+		y++;
+	}
+
+	_putchar('\n');
 	return (0);
 }
