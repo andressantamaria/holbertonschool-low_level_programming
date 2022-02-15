@@ -1,29 +1,15 @@
-#include <stdio.h>
-/**
- * main - Use print_alphabet() function
- * Return: zero
- */
-/* print_alphabet declaration */
-void print_alphabet(void);
-
-int main(void)
-{
-	print_alphabet();
-
-	return (0);
-}
-
+#include "main.h"
 /**
  * print_alphabet - Prints alphabet in lower case, ends with new line
+ * Return: zero.
  */
-
 void print_alphabet(void)
 {
 	int c;
 
 	for (c = 97; c < 123; c++)
 	{
-		putchar(c);
+		_putchar(c);
 	}
-	putchar(10);
+	_putchar('\n');
 }
