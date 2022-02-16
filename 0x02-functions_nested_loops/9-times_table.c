@@ -18,23 +18,30 @@ void times_table(void)
 			int unit = mult % 10;
 			int ten = (mult - unit) / 10;
 
-			if (ten == 0)
+			if (mult < 10)
 			{
-				_putchar(32);
+				if (aux != 0)
+					_putchar(32);
+
 				_putchar(unit + 48);
-				if (aux != 9)
+
+				if (aux < 9)
+				{
 					_putchar(44);
-				_putchar(32);
+					_putchar(32);
+				}
 			}
 			else
 			{
 				_putchar(ten + 48);
 				_putchar(unit + 48);
-				if (aux != 9)
-					_putchar(44);
-				_putchar(32);
-			}
 
+				if (aux != 9)
+				{
+					_putchar(44);
+					_putchar(32);
+				}
+			}
 		}
 		_putchar('\n');
 	}
