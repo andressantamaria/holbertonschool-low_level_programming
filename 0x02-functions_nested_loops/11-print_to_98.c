@@ -16,7 +16,7 @@ void print_to_98(int n)
 		for (aux = n; aux <= 98; aux++)
 		{
 			if (aux != 98)
-				printf("%d ,", aux);
+				printf("%d, ", aux);
 			else
 				printf("%d", aux);
 		}
@@ -26,7 +26,7 @@ void print_to_98(int n)
 		for (aux = n; aux >= 98; aux--)
 		{
 			if (aux != 98)
-				printf("%d ,", aux);
+				printf("%d, ", aux);
 			else
 				printf("%d", aux);
 		}
