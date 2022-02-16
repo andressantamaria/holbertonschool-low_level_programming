@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *times_table - print one to nine table
+ *times_table - prints zero to nine multiplication table
  *
  */
 void times_table(void)
@@ -20,19 +20,16 @@ void times_table(void)
 
 			if (ten == 0)
 			{
+				_putchar(32);
 				_putchar(unit + 48);
 				if (aux != 9)
 					_putchar(44);
 				_putchar(32);
-				_putchar(32);
-
-
 			}
-
 			else
 			{
-				_putchar(unit + 48);
 				_putchar(ten + 48);
+				_putchar(unit + 48);
 				if (aux != 9)
 					_putchar(44);
 				_putchar(32);
