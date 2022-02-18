@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * int _isupper - function that multiplies two integers.
+ * mul - function that multiplies two integers.
  * @a: int factor
  * @b: int factor
+ * Return: multiplication value
  */
 int mul(int a, int b)
 {
