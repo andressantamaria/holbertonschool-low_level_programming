@@ -1,14 +1,14 @@
 #include "main.h"
 /**
- * int _isupper - Checks if int is UPPER
- * @c: int to evaluated
+ * more_numbers -  prints 10 times the numbers, from 0 to 14
+ *
  */
 void more_numbers(void)
 {
+	int i;
 
-        int i;
-        for (i = 48; i < 58; i++)
-                _putchar(i);
+	for (i = 48; i < 58; i++)
+		_putchar(i);
 
 	for (i = 48; i < 53; i++)
 	{
@@ -16,5 +16,5 @@ void more_numbers(void)
 		_putchar(i);
 	}
 
-        _putchar('\n');
+	_putchar('\n');
 }
