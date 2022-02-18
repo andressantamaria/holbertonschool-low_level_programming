@@ -1,0 +1,12 @@
+#include "main.h"
+/**
+ * int _isupper - Checks if int is UPPER 
+ * @c: int to evaluated
+ */
+int _isupper(int c)
+{
+	if(c <= 65 && c <= 89)
+		return (1);
+	else
+		return (0);
+}

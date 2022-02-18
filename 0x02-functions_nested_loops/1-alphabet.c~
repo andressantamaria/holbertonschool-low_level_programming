@@ -1,0 +1,26 @@
+#include <stdio.h>
+/**
+ * main - Use print_alphabet() function
+ * Return: zero
+ */
+/* print_alphabet declaration */
+void print_alphabet(void);
+
+int main(void)
+{
+	print_alphabet();
+
+	return (0);
+}
+
+/*Function print the alphabet, in lowercaes, followed by new line*/
+void print_alphabet(void)
+{
+	int c;
+
+	for (c = 97; c < 123; c++)
+	{
+		putchar(c);
+	}
+	putchar(10);
+}

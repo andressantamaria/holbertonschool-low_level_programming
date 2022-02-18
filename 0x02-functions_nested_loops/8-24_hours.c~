@@ -1,0 +1,63 @@
+#include "main.h"
+#include <stdio.h>
+/**
+ * jack_bauer - Prints every minute of Jack Bauer
+ * Description: prints in 24 H format
+ */
+void jack_bauer(void)
+{
+	int flag  = 48;
+	int counter;
+	int watch [] = {48, 48, 48, 48};
+
+	do
+	{
+		for (counter = 0; counter <= 3; counter++)
+		{
+			_putchar(watch[counter]);
+
+			if( counter == 1)
+				_putchar(58);
+		}
+		_putchar('\n');
+
+
+		if(watch[3]  < 57)
+		{
+			watch[3] += 1;
+		}
+		else
+		{
+			watch[3] = 48;
+			watch[2] += 1;
+		}
+
+		if(watch[2]  > 53)
+		{
+			watch[2] = 48;
+			watch[1] += 1;
+		}
+
+		if (watch[1] > 57)
+		{
+			watch[0] += 1;
+			watch[1] = 48;
+		}
+
+		if(watch[0] == 50 && watch[1] == 51 && watch[2] == 53 && watch[3] == 57)
+		{
+			for (counter = 0; counter <= 3; counter++)
+			{
+				_putchar(watch[counter]);
+
+				if( counter == 1)
+					_putchar(58);
+			}
+			_putchar('\n');
+			flag += 1;
+		}
+	}
+
+	while (flag < 49);
+
+}

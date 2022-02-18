@@ -1,0 +1,19 @@
+#include "main.h"
+/** 
+ *
+ * 
+*/
+void tester(void)
+{	      
+	_putchar('p');
+	_putchar(122);
+	/*
+        int arreglo[] = {95, 112, 117, 116, 99, 104, 97, 114};
+        int i;
+        for (i = 0; i <8 ; i++)
+                _putchar(arreglo[i]);
+	*/
+
+        _putchar(13);
+}
+

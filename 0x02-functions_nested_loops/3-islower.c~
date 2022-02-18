@@ -1,0 +1,21 @@
+#include "main.h"
+/**
+ * main use int _islower(int c) function
+ * Return zero
+ */
+/* int_islower declaration */
+
+/**
+ * _islower - Checks for lowercase character.
+ *
+ */
+int _islower(int c)
+{
+	
+	if (c <= 122 && c >= 97)
+		return 1;
+	else
+		return 0;
+
+	_putchar('\n');
+}
